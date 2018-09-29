@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="verov.rgbsliders.MainActivity">
+
+    <TextView
+        android:id="@+id/SzovegDoboz1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:text="Vörös: 128"/>
+
+    <TextView
+        android:id="@+id/SzovegDoboz2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Csuszka_R"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:text="Zöld: 128"/>
+
+    <TextView
+        android:id="@+id/SzovegDoboz3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Csuszka_G"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:text="Kék: 128" />
+
+    <SeekBar
+        android:id="@+id/Csuszka_R"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SzovegDoboz1"
+        android:padding="16dp"
+        android:max="255"
+        android:progress="128" />
+
+    <SeekBar
+        android:id="@+id/Csuszka_G"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SzovegDoboz2"
+        android:padding="16dp"
+        android:max="255"
+        android:progress="128" />
+
+    <SeekBar
+        android:id="@+id/Csuszka_B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/SzovegDoboz3"
+        android:padding="16dp"
+        android:max="255"
+        android:progress="128" />
+
+    <TextView
+        android:id="@+id/Szoveg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Csuszka_B"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:textSize="24dp"
+        android:text=" © 2018 - Verovszki Tamás" />
+
+
+</RelativeLayout>
